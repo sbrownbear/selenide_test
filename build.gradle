@@ -1,0 +1,20 @@
+plugins {
+    id 'java-library'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(
+            "org.junit.jupiter:junit-jupiter:5.9.1",
+            "org.slf4j:slf4j-simple:2.0.16",
+            "com.codeborne:selenide:6.19.1"
+
+    )
+}
+
+test {
+    useJUnitPlatform() // Говорим gradle что используем JUnit5
+}
